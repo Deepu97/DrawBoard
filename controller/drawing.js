@@ -15,7 +15,7 @@ export const handleStart=(socket,data)=>{
 export const handleMove=(socket,data)=>{
   console.log(data,"move");
   socket.to(data.room).emit("move",data);
-  movePos.push(data);
+ 
   // socket.broadcast.emit("move",data);
 }
 export const handleEnd=(socket,data)=>{
